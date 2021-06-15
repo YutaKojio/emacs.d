@@ -3,7 +3,8 @@
 
 (eval-when-compile
   (message "Byte compile rosemacs")
-  (let ((ROS_DISTRO (getenv "ROS_DISTRO")))
+  ;; (let ((ROS_DISTRO (getenv "ROS_DISTRO")))
+  (let ((ROS_DISTRO nil))
     (when ROS_DISTRO
       (let ((byte-compile-dest-file-function
              (lambda (filename)
@@ -55,7 +56,8 @@
                           '(("\\<\\(bool\\|byte\\|int8\\|uint8\\|int16\\|uint16\\|int32\\|uint32\\|int64\\|uint64\\|float32\\|float64\\|string\\|time\\|duration\\)\\>" . font-lock-builtin-face)) 'set))
 
 ;; sudo apt install ros-${ROSDISTRO}-rosemacs
-(let ((ROS_DISTRO (getenv "ROS_DISTRO")))
+;; (let ((ROS_DISTRO (getenv "ROS_DISTRO")))
+(let ((ROS_DISTRO nil))
   (when ROS_DISTRO
     (defvar ros-site-lisp (file-name-as-directory (format "/opt/ros/%s/share/emacs/site-lisp" ROS_DISTRO)))
     (with-eval-after-load 'yasnippet

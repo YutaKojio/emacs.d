@@ -66,10 +66,10 @@
   (emacs-lock-mode 'kill))
 
 ;; Share clipboard
-(use-package xclip
-  :config
-  (when (eq 0 (shell-command "type xclip"))
-    (xclip-mode 1)))
+;; (use-package xclip
+;;   :config
+;;   (when (eq 0 (shell-command "type xclip"))
+;;     (xclip-mode 1)))
 
 ;; Don't distinguish upper/lower cases when search
 (setq case-fold-search t)
