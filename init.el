@@ -308,5 +308,5 @@
  '(query-replace ((t (:inherit isearch :background "color-40")))))
 
 ;; line-mode                                                                                           
-(global-linum-mode t)
+;; (global-linum-mode t)
 (setq linum-format "%4d ")
