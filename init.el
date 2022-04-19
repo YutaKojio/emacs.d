@@ -306,3 +306,7 @@
  '(completions-first-difference ((t (:inherit bold :foreground "color-164"))))
  '(font-lock-warning-face ((t (:foreground "#ff3700"))))
  '(query-replace ((t (:inherit isearch :background "color-40")))))
+
+;; line-mode                                                                                           
+(global-linum-mode t)
+(setq linum-format "%4d ")
