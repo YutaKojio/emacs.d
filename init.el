@@ -57,7 +57,7 @@
 (line-number-mode t)
 (column-number-mode t)
 ;; Ask whether to insert newline at final line
-(setq require-final-newline 0)
+(setq require-final-newline nil)
 
 ;; Set buffer that can not be killed.
 (with-current-buffer "*scratch*"
