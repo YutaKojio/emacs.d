@@ -20,7 +20,7 @@
   (advice-add 'python-mode :before 'elpy-enable)
   :config
   (remove-hook 'elpy-modules 'elpy-module-highlight-indentation)
-  ;; (remove-hook 'elpy-modules 'elpy-module-flymake)
+  (remove-hook 'elpy-modules 'elpy-module-flymake)
   :custom
   (elpy-rpc-python-command "python3")
   (flycheck-python-flake8-executable "flake8")
