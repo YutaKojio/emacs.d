@@ -310,3 +310,16 @@
 ;; line-mode                                                                                           
 ;; (global-linum-mode t)
 (setq linum-format "%4d ")
+
+;; ;; melpa
+;; (when (require 'package nil t)
+;;   (add-to-list 'package-archives
+;;     '("melpa-stable" . "https://stable.melpa.org/packages/"))
+;;   (package-initialize))
+
+;; smart-jump
+(use-package smart-jump
+  :ensure t
+  :bind (("M-." . smart-jump-go)
+         ("M-," . smart-jump-back)
+         ("M-?" . smart-jump-references)))
