@@ -311,11 +311,11 @@
 ;; (global-linum-mode t)
 (setq linum-format "%4d ")
 
-;; ;; melpa
-;; (when (require 'package nil t)
-;;   (add-to-list 'package-archives
-;;     '("melpa-stable" . "https://stable.melpa.org/packages/"))
-;;   (package-initialize))
+;; melpa
+(when (require 'package nil t)
+ (add-to-list 'package-archives
+   '("melpa-stable" . "https://stable.melpa.org/packages/"))
+ (package-initialize))
 
 ;; smart-jump
 (use-package smart-jump
