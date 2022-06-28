@@ -313,9 +313,9 @@
 
 ;; melpa
 (when (require 'package nil t)
- (add-to-list 'package-archives
-   '("melpa-stable" . "https://stable.melpa.org/packages/"))
- (package-initialize))
+  (add-to-list 'package-archives
+               '("melpa-stable" . "https://stable.melpa.org/packages/"))
+  (package-initialize))
 
 ;; smart-jump
 (use-package smart-jump
