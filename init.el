@@ -304,6 +304,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(completions-first-difference ((t (:inherit bold :foreground "color-164"))))
+ '(diff-refine-added ((t (:inherit diff-refine-changed :background "color-22"))))
  '(font-lock-warning-face ((t (:foreground "#ff3700"))))
  '(query-replace ((t (:inherit isearch :background "color-40")))))
 
@@ -323,3 +324,9 @@
   :bind (("M-." . smart-jump-go)
          ("M-," . smart-jump-back)
          ("M-?" . smart-jump-references)))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
