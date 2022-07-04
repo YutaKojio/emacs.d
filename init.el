@@ -365,5 +365,5 @@
                    (call-interactively command)))
                (message "Quit")
                (throw 'end-flag t)))))))
-(global-set-key "\C-c\C-w" 'window-resizer)
+(global-set-key "\C-x\w" 'window-resizer)
 (setq split-width-threshold nil)
