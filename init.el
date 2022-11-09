@@ -372,3 +372,9 @@
                (throw 'end-flag t)))))))
 (global-set-key "\C-x\w" 'window-resizer)
 (setq split-width-threshold nil)
+
+;; rgrep
+(eval-after-load "grep"
+  '(setf (cdr (assoc "cc" grep-files-aliases))
+         (cdr (assoc "cchh" grep-files-aliases))))
+(global-set-key "\M-s" 'rgrep)
