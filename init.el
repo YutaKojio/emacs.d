@@ -378,3 +378,14 @@
   '(setf (cdr (assoc "cc" grep-files-aliases))
          (cdr (assoc "cchh" grep-files-aliases))))
 (global-set-key "\M-s" 'rgrep)
+
+;; Work around a bug where esup tries to step into the byte-compiled
+;; version of `cl-lib', and fails horribly.
+(setq esup-depth 0)
+
+;; ;; help for faster?
+;; (setq vc-handled-backends nil)
+
+(require 'eglot)
+(add-to-list 'eglot-server-programs '(c++-mode . ("clangd")))
+(add-to-list 'eglot-server-programs '(c++-ts-mode . ("clangd")))
